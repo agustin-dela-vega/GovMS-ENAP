@@ -26,9 +26,13 @@ main {
   background: linear-gradient(#882485, #3C4594);
   min-height: calc(100vh - 200px);
   display: grid;
-  justify-content: space-around;
+
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+  align-content: center;
   color: white;
   align-items: center;
+  padding: 0 40px;
+
 }
 main .form-container{
   border: 2px solid white;
@@ -41,6 +45,8 @@ main .form-container{
   /* justify-content: space-around; */
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 15px;
+
 }
 .form-container h2{
   margin-bottom: 20px;
@@ -52,9 +58,6 @@ main .form-container{
   justify-content: space-around;
 }
 
-/* .form div label{
-  margin-top: 15px;
-} */
 .input {
   background-color: transparent;
   border-left: 0px;
@@ -87,10 +90,68 @@ main .form-container{
   align-items: center;
 }
 
+.btn:hover{
+  color: black;
+  background-color: white;
+}
+
+main .container-table{
+  border: 2px solid white;
+  border-radius: 50px;
+  min-height: 400px;
+  width: 300px;
+  padding: 60px 65px 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 15px;
+
+
+}
+
+main .container-table table{
+
+  display: flex;
+  justify-content: center;
+}
+
+.container-table tbody tr th{
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  color:black;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container-table td{
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+}
 
 
 
 footer{
   background-color: #384890;
   height: 100px;
+}
+
+@media only screen and (max-width: 600px){
+  /* main{
+    width: 100%;
+  } */
+  main .form-container{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+  }
+  main .container-table{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+  }
+
 }

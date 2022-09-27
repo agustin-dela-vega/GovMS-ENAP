@@ -14,7 +14,7 @@
   <main>
     <section class="form-container">
       <h2>Formulario</h2>
-      <form class="form">
+      <form class="form" id="formElem">
         <div class="">
           <label for="fuente">
             <strong>Fuente</strong>
@@ -38,17 +38,28 @@
           <input class="input"type="text" name="precio" placeholder="Ej: $2000" value="$ ">
         </div>
         <div>
-          <button class="btn">Enviar</button>
+          <button id="button"class="btn" type="submit">Enviar</button>
         </div>
       </form>
     </section>
-    
-    <section>
-      <!-- aqui va la tabla dinamica de los ultimmos agregados -->
+
+    <section class="container-table">
+      <table id="tableData">
+        <tbody>
+          <tr>
+            <th>Fuente</th>
+            <th>Tipo de petroleo</th>
+            <th>Precio</th>
+          </tr>
+        </tbody>
+        
+
+      </table>
     </section>
   </main>
   <footer>
     <!-- aqui va el footer, pero no es necesario que tenga algo -->
   </footer>
+  <script src="./main.js"></script>
 </body>
 </html>
