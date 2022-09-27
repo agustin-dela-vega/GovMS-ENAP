@@ -105,3 +105,12 @@ footer{
   background-color: #384890;
   height: 100px;
 }
+
+@media only screen and (max-width: 600px){
+  .logIn-container{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+  }
+}
