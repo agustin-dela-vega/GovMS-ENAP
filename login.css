@@ -53,6 +53,7 @@ header .header-img{
   color: white;
   font-weight: bold;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .logIn-form div label{
@@ -77,13 +78,12 @@ header .header-img{
   outline: none;
   height: 50px;
   color: white;
+  margin-bottom: 30px;
 }
 ::placeholder{
   color: white;
 }
-input#correo[value=correo]{
-  color: white;
-}
+
 .btn{
   background-color: rgba(255, 255, 255, 0.247);
   border: none;
