@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./form.css">
+  <title>Form</title>
+</head>
+<body>
+  <header>
+    <img src="https://hualpensuma.enap.cl/wp-content/uploads/2022/02/logo-enap-png-blanco.png" alt="Logo Enap">
+  </header>
+  <main>
+    <section class="form-container">
+      <h2>Formulario</h2>
+      <form class="form">
+        <div class="">
+          <label for="fuente">
+            <strong>Fuente</strong>
+          </label>
+          <input class="input"name="fuente" type="text" placeholder="...">
+        </div>
+        <div class="">
+          <label for="petroleo">
+            <strong>Tipo de petroleo</strong>
+          </label>
+          <select class="input"name="petroleo" id="list-petroleo">
+            <option value="WTI">WTI</option>
+            <option value="BRENT">BRENT</option>
+            <option value="OPEP">OPEP</option>
+          </select>
+        </div>
+        <div class="">
+          <label for="precio">
+            <strong>Precio</strong>
+          </label>
+          <input class="input"type="text" name="precio" placeholder="Ej: $2000" value="$ ">
+        </div>
+        <div>
+          <button class="btn">Enviar</button>
+        </div>
+      </form>
+    </section>
+    
+    <section>
+      <!-- aqui va la tabla dinamica de los ultimmos agregados -->
+    </section>
+  </main>
+  <footer>
+    <!-- aqui va el footer, pero no es necesario que tenga algo -->
+  </footer>
+</body>
+</html>

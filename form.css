@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Mulish', sans-serif;
+}
+
+header{
+  background-color: #882485;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img{
+  width: 200px;
+  margin-left: 30px;
+}
+
+main {
+  background: linear-gradient(#882485, #3C4594);
+  min-height: calc(100vh - 200px);
+  display: grid;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+}
+main .form-container{
+  border: 2px solid white;
+  border-radius: 50px;
+  min-height: 400px;
+  width: 300px;
+  padding: 60px 65px 40px;
+  color: white;
+  display: flex;
+  /* justify-content: space-around; */
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.form-container h2{
+  margin-bottom: 20px;
+}
+
+.form-container .form div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* .form div label{
+  margin-top: 15px;
+} */
+.input {
+  background-color: transparent;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid white;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  margin-bottom: 30px;
+  outline: none;
+  height: 50px;
+  color: white;
+}
+::placeholder{
+  color: white;
+}
+
+.form .btn{
+  background-color: rgba(255, 255, 255, 0.247);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Mulish', sans-serif;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+  align-items: center;
+}
+
+
+
+
+footer{
+  background-color: #384890;
+  height: 100px;
+}
